@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Montserrat&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    color: #343434;
+    width: 100%;
+    line-height: 50px;
+    background: #ffffffe1;
+    float: left;
+    position: fixed;
+    transition: all .3s ease;
+}
+.header.out {
+	transform: translateY(-100%);
+}
+
+#logo {
+    cursor: pointer;
+    font-size: 1.7em;
+    margin-left: 40px;
+    width: 30%;
+    float: left;
+    font-family: 'Fredoka One', cursive;
+}
+
+#logo > a{
+    text-decoration: none;
+    color: #343434;
+}
+
+#links{
+    text-align: center;
+    font-size: 1em;
+}
+
+#links > a {
+    color: #343434;
+    text-decoration: none;
+}
+
+#links > a:hover {
+    color: #7c7c7c;
+}
+
+#links > a:not(:last-child){
+    margin-right: 7%;
+}
+
+#top{
+    width: 100%;
+    height: 1000px;
+    background-image: url("../img/Morskie\ Oko.jpg");
+    background-blend-mode: multiply;
+    background-color: #00000067;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+}
+
+#top > h1 {
+    padding-top: 20%;
+}
+
+#top > h3 {
+    color: #ccc;
+}
+
+.link {
+    padding: 100px 20%;
+    width: 60%;
+    float: left;
+    background-color: #ffffff;
+    font-size: 1.3em;
+    background-image: url("../img/noise.png");
+}
+
+.link > div {
+    width: 40%;
+    margin-right: 10%;
+    float: left;
+}
+
+.link > h2 {
+    color: #343434;
+    font-size: 3em;
+}
+
+.link > span {
+    color: #7c7c7c;
+}
+
+.perfect {
+    float: left;
+    background-blend-mode: multiply;
+    background-color: #00000067;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 150px;
+    width: 100%;
+    height: 150;
+}
+
+div.perfect#one{
+    background-image: url("../img/Ashim\ DSilva.jpg");
+}
+
+div.perfect#two{
+    background-image: url("../img/Photo\ by\ SpaceX.jpg");
+}
+
+div.perfect#three{
+    background-image: url("../img/Rob\ Bye.jpg");
+}
+
+div.perfect#fore{
+    background-image: url("../img/Pablo\ Garcia\ Saldana.jpg");
+}
+
+form#form{
+    margin-top: 15px;
+    width: 35%;
+    margin-left: 25%;
+}
+
+form#form > input, form#form > textarea{
+    margin-bottom: 10px;
+    padding: 10px 2%;
+    width: 100%;
+}
+
+#send {
+    float: left;
+    border-radius: 5px;
+    margin-left: 25%;
+    cursor: pointer;
+}

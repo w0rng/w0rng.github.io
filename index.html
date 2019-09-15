@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEB programming</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div id="logo">
+            <a onclick="slowScroll('#top')">WEB programming</a>
+        </div>
+        <div id="links">
+            <a onclick="slowScroll('#one')">Какая-то ссылка</a>
+            <a onclick="slowScroll('#two')">Ссылка №2</a>
+            <a onclick="slowScroll('#three')">Еще одна ссылка</a>
+            <a onclick="slowScroll('#fore')">Обычная ссылка</a>
+            <a onclick="slowScroll('#five')">Отзывы</a>
+        </div>
+    </div>
+
+    <div id="top">
+        <h1>WEB программирование</h1>
+        <h3>это нормально</h3>
+    </div>
+
+    <div class="link" id="one">
+        <div>
+            <h2>Какая-то ссылка</h2>
+            <span>Я не знаю зачем она нужна</span>
+        </div>
+        <div>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aut asperiores perferendis facilis
+                sunt, neque voluptatibus labore assumenda ipsa corporis soluta vero repellendus rerum harum hic non
+                delectus, quas laborum!</span>
+        </div>
+    </div>
+
+    <div class="perfect" id="one"></div>
+
+    <div class="link" id="two">
+        <div>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ullam, quaerat quae quibusdam
+                corrupti fuga assumenda ipsam veritatis accusantium id animi ad nulla recusandae iure laudantium
+                adipisci quidem eligendi ducimus!</span>
+        </div>
+        <div>
+            <h2>Ссылка №2</h2>
+            <span>Что писать тут я также не знаю</span>
+        </div>
+    </div>
+
+    <div class="perfect" id="two"></div>
+
+    <div class="link" id="three">
+        <div>
+            <h2>Еще одна ссылка</h2>
+            <span>Зачем столько?</span>
+        </div>
+        <div>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit consequatur aspernatur veritatis,
+                officia ipsum minima cupiditate labore aperiam sunt dolorum, minus, cum ducimus iusto. Et fugit ratione
+                quis cupiditate fugiat.</span>
+        </div>
+    </div>
+
+    <div class="perfect" id="three"></div>
+
+    <div class="link" id="fore">
+        <div>
+            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti aperiam atque, laborum architecto
+                assumenda nisi illo aliquid minus ipsam. Sit magnam nam veritatis labore alias, at omnis sapiente
+                perspiciatis esse!</span>
+        </div>
+        <div>
+            <h2>Обычная ссылка</h2>
+            <span>Ура! это последняя</span>
+        </div>
+    </div>
+
+    <div class="perfect" id="fore"></div>
+
+    <div class="link" id="five">
+        <div>
+            <h2>Написать отзыв</h2>
+            <form id="form">
+                <input type="text" placeholder="Имя" name="name" id="name"><br>
+                <input type="email" placeholder="Почта" name="email" id="email"><br>
+                <textarea placeholder="Сообщение" name="message" id="message"></textarea><br>
+                <div id="send">Отправить</div>
+            </form>
+        </div>
+        <div>
+            <h2>Случайный отзыв</h2>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus omnis natus praesentium sequi?
+                Porro eaque ex ullam quidem provident facilis doloremque, maxime magnam sapiente quas minima
+                voluptatibus placeat possimus itaque.</span>
+        </div>
+    </div>
+
+    <script src="./js/hideMenu.js"></script>
+
+    <script src="./js/slowScroll.js"></script>
+</body>
+
+</html>
