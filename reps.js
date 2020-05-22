@@ -6,11 +6,21 @@ var resp = JSON.parse(xhr.responseText);
 
 resp.forEach(function (item, i, arr) {
     if (item["language"] == "Python") {
+
+        var start = new Date(item["created_at"]);
+        var stop = new Date(item["updated_at"]);
+        var url = item["html_url"];
+        var description = item["description"].split('.');
+        var name = description[0];
+        description.shift();
+        description = description.join('.')
+
         projects.insertAdjacentHTML("afterbegin",
-            "🔥 <a href=\"" + item["html_url"] + "\">" + item["name"] + "</a>" +
+            "🔥 <a href=\"" + url + "\">" + name + "</a>" +
             "<span class=\"click\"> (клик)<br>" +
-            item["created_at"].split('T')[0] + " - " + item["updated_at"].split('T')[0] +
-            "</span><h4>" + item["description"] + "</h4><br>");
+            start.getDate() + "." + start.getMonth() + "." + start.getFullYear() + " - " +
+            stop.getDate() + "." + stop.getMonth() + "." + stop.getFullYear() +
+            "</span><h4>" + description + "</h4><br>");
     }
 });
 
