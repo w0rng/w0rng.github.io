@@ -14,7 +14,7 @@ resp.forEach(function (item, i, arr) {
     if (item["language"] == "Python") {
 
         var start = new Date(item["created_at"]);
-        var stop = new Date(item["updated_at"]);
+        var stop = new Date(item["pushed_at"]);
         var url = item["html_url"];
         var description = item["description"].split('.');
         var name = description[0];
