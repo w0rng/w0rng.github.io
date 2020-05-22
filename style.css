@@ -22,17 +22,24 @@ A:active {
 .projects a {
     font-weight: 400;
 }
+@media screen and (min-width: 800px) {
+    .left_block {
+        width: 65%;
+        height: 100%;
+        float: left;
+    }
 
-.left_block {
-    width: 65%;
-    height: 100%;
-    float: left;
+    .right_block {
+        width: 30%;
+        height: 100%;
+        float: right;
+    }
 }
 
-.right_block {
-    width: 30%;
-    height: 100%;
-    float: right;
+@media screen and (max-width: 800px) {
+    h3 {
+        margin-bottom: 2%;
+    }
 }
 
 h2 {
@@ -41,7 +48,8 @@ h2 {
 }
 
 h3 {
-    color: #716F71;
+    color: rgb(129, 127, 129);
+    font-size: medium;
 }
 
 h4 {
@@ -49,6 +57,11 @@ h4 {
     font-weight: 300;
 }
 
-.text{
+.text {
     line-height: 22px;
+}
+
+.click {
+    color:rgb(196, 196, 196);
+    font-size: smaller;
 }
