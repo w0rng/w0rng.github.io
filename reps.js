@@ -5,9 +5,12 @@ xhr.send();
 var resp = JSON.parse(xhr.responseText);
 
 resp.forEach(function (item, i, arr) {
-    projects.insertAdjacentHTML("afterbegin",
-        "🔥 <a href=\"" + item["html_url"] + "\">" + item["name"] + "</a>" +
-        "<span class=\"click\">(клик)</span><br>" +
-        "<h4>" + item["description"] + "</h4><br>");
+    if (item["language"] == "Python") {
+        projects.insertAdjacentHTML("afterbegin",
+            "🔥 <a href=\"" + item["html_url"] + "\">" + item["name"] + "</a>" +
+            "<span class=\"click\"> (клик)<br>" +
+            item["created_at"].split('T')[0] + " - " + item["updated_at"].split('T')[0] +
+            "</span><h4>" + item["description"] + "</h4><br>");
+    }
 });
 
