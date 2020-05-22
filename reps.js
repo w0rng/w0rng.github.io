@@ -1,8 +1,14 @@
 var xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://api.github.com/users/w0rng/repos', false);
+xhr.open('GET', 'https://api.github.com/users/w0rng/repos?type=all', false);
 xhr.send();
 
 var resp = JSON.parse(xhr.responseText);
+
+function sortByAge(arr) {
+    arr.sort((a, b) => a["created_at"] > b["created_at"] ? 1 : -1);
+}
+
+sortByAge(resp);
 
 resp.forEach(function (item, i, arr) {
     if (item["language"] == "Python") {
