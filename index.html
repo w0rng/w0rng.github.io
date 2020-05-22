@@ -1,113 +1,60 @@
 <!DOCTYPE html>
-
 <html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>WEB programming</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <script src="./js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Резюме</title>
 </head>
 
 <body>
 
-    <div class="header">
-        <div id="logo">
-            <a onclick="slowScroll('#top')">WEB programming</a>
+    <div class="left_block">
+        <div>
+            <h1>Абрамов Антон</h1>
+            <h3>Junior Python Developer</h3>
         </div>
-        <div id="links">
-            <a onclick="slowScroll('#one')">Какая-то ссылка</a>
-            <a onclick="slowScroll('#two')">Ссылка №2</a>
-            <a onclick="slowScroll('#three')">Еще одна ссылка</a>
-            <a onclick="slowScroll('#fore')">Обычная ссылка</a>
-            <a onclick="slowScroll('#five')">Отзывы</a>
+        <h2>ПРОЕКТЫ</h2>
+        <div class="text">
+            🔥 <a href="https://github.com/w0rng/trading-bot">Торговый робот.</a><br>
+            <h4>
+                Получает данные по api биржи, анализирует рынки, выбирает оптимальный, покупает и продает криптовалюту
+                валюту.
+            </h4><br>
+
+            🔥 <a href="https://github.com/w0rng/brainfuck-interpreter">Интерпретатор для самого лучшего языка.</a><br>
+            <h4>(Если не считать Python)</h4><br>
+
+            🔥 <a href="https://github.com/w0rng/genetic-algorithm">Генетический алгоритм.</a><br>
+            <h4>Оптимизирует строку, чтоб она совпадала с введенной.</h4><br>
+
+            🔥 <a href="https://github.com/w0rng/neural-network">Нейронные сети.</a><br>
+            <h4>В настоящий момент пишу программу, оптимизирующую структуру нейронных сетей.</h4>
+
         </div>
     </div>
-
-    <div id="top">
-        <h1>WEB программирование</h1>
-        <h3>это нормально</h3>
-    </div>
-
-    <div class="link" id="one">
-        <div>
-            <h2>Какая-то ссылка</h2>
-            <span>Я не знаю зачем она нужна</span>
+    <div class="right_block">
+        <div class="text">
+            +7 (963) 185-98-23<br>
+            w0rng@ya.ru<br>
+            <a href="t.me/w0rng">Телеграм</a><br>
+            <a href="vk.me/w0rng">ВКонтакте </a><br>
         </div>
-        <div>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aut asperiores perferendis facilis
-                sunt, neque voluptatibus labore assumenda ipsa corporis soluta vero repellendus rerum harum hic non
-                delectus, quas laborum!</span>
+        <h2>НАВЫКИ</h2>
+        <div class="text">
+            💡 Python<br>
+            💡 Django<br>
+            💡 ООП<br>
+            💡 Git<br>
+            💡 Linux<br>
         </div>
-    </div>
-
-    <div class="perfect" id="one"></div>
-
-    <div class="link" id="two">
-        <div>
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ullam, quaerat quae quibusdam
-                corrupti fuga assumenda ipsam veritatis accusantium id animi ad nulla recusandae iure laudantium
-                adipisci quidem eligendi ducimus!</span>
-        </div>
-        <div>
-            <h2>Ссылка №2</h2>
-            <span>Что писать тут я также не знаю</span>
+        <h2>ОБРАЗОВАНИЕ</h2>
+        <div class="text">
+            Неоконченное высшее, Программная инжененрия, СибГУ
         </div>
     </div>
-
-    <div class="perfect" id="two"></div>
-
-    <div class="link" id="three">
-        <div>
-            <h2>Еще одна ссылка</h2>
-            <span>Зачем столько?</span>
-        </div>
-        <div>
-            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit consequatur aspernatur veritatis,
-                officia ipsum minima cupiditate labore aperiam sunt dolorum, minus, cum ducimus iusto. Et fugit ratione
-                quis cupiditate fugiat.</span>
-        </div>
-    </div>
-
-    <div class="perfect" id="three"></div>
-
-    <div class="link" id="fore">
-        <div>
-            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti aperiam atque, laborum architecto
-                assumenda nisi illo aliquid minus ipsam. Sit magnam nam veritatis labore alias, at omnis sapiente
-                perspiciatis esse!</span>
-        </div>
-        <div>
-            <h2>Обычная ссылка</h2>
-            <span>Ура! это последняя</span>
-        </div>
-    </div>
-
-    <div class="perfect" id="fore"></div>
-
-    <div class="link" id="five">
-        <div>
-            <h2>Написать отзыв</h2>
-            <form id="form">
-                <input type="text" placeholder="Имя" name="name" id="name"><br>
-                <input type="email" placeholder="Почта" name="email" id="email"><br>
-                <textarea placeholder="Сообщение" name="message" id="message"></textarea><br>
-                <div id="send">Отправить</div>
-            </form>
-        </div>
-        <div>
-            <h2>Случайный отзыв</h2>
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus omnis natus praesentium sequi?
-                Porro eaque ex ullam quidem provident facilis doloremque, maxime magnam sapiente quas minima
-                voluptatibus placeat possimus itaque.</span>
-        </div>
-    </div>
-
-    <script src="./js/hideMenu.js"></script>
-
-    <script src="./js/slowScroll.js"></script>
 </body>
 
 </html>
