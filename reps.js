@@ -1,5 +1,5 @@
 const NICK = 'w0rng';
-let languages = ['Python'];
+let languages = ['Python', 'Jupyter Notebook'];
 
 
 function getReps() {
