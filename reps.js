@@ -70,7 +70,7 @@ sortByCreateData(resp);
 resp.forEach(function (item, i, arr) {
     if (languages.indexOf(item.language) != -1) {
         if (item.fork || item.archived) {
-            continue
+            return;
         }
         
 
